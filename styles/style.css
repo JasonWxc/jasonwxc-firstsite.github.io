@@ -1,5 +1,5 @@
   html {
-    font-size: 20px;
+    font-size: 18px;
     font-family: Microsoft YaHei;
     background-color: blue;
   }
@@ -20,9 +20,9 @@
     color: #00539F;
     text-shadow: 3px 3px 1px black;
   }
-  
+
   p, li {
-    font-size: 16px;    
+    font-size: 15px;    
     line-height: 2;
     letter-spacing: 1px;
   }
@@ -30,4 +30,12 @@
   img {
     display: block;
     margin: 0 auto;
+  }
+
+  #inputArea, #outputArea {
+    width:90%;
+    height:2em;
+    padding: 10px;
+    border:1px solid #0095dd;
+    background-color: white;
   }

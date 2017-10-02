@@ -2,68 +2,99 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="author" content="Jason Wxc">
+        <meta name="keywords" content="My test page,Have a break,Life experience">
+        <meta name="description" content="人生经历,刚出生,小的时候,上小学">
+
+        <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+        <meta property="og:description" content="人生经历,刚出生,小的时候,上小学">
+        <meta property="og:title" content="My test page">
+
+        <meta property="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+        <meta property="twitter:description" content="人生经历,刚出生,小的时候,上小学">
+        <meta name="twitter:title" content="My test page">
+
+        <link rel="shortcut icon" type="image/x-icon" href="./ico.png">
+
         <title>My test page</title>
         <link href="styles/style.css" rel="stylesheet" type="text/css">
         <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>-->
     </head>
     <body>
-        <button id="myButton">Change user</button>
-        <h1>Aboat me</h1>
-        <img src="images/me.jpg" alt="My picture" id="myPicture"/>
-        <ul>
-            <li>Name:       JasonWxc</li>
-            <li>Gender:     Male</li>
-            <li>Age:        Thirty</li>
-            <li>BrithDay:   87/5/23</li>
-            <li>Marry:      single</li>
-            <li>Graduate:   TUST</li>
-            <li>Amateur:    Take a walk on the beach</li>
-        </ul>
-        <h2>Life experience</h2>
-        <img src="images/index.jpg" alt="in my childhood"/>
-        <table>
-            <tr><h4>刚出生</h4></tr>
-            <tr>
-                <td>87年</td>
-                <td>
-                    <ol>
-                        <li>据说妈妈生我的时候差点晕死过去，妈妈辛苦了，谢谢你。</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr><h4>小的时候</h4></tr>
-            <tr>
-                <td rowspan="3">92年</td>
-                <td>
-                    <ol>
-                        <li>被长发长指甲的乞丐吓到，吓死宝宝了。</li>
-                        <li>拿玻璃瓶盖刮花陌生人的摩托车箱，被发现，还好妈妈刚好出来，太感恩了，^_^o ~~~。</li>
-                        <li>第一次偷钱，貌似50块，本想拿去买游戏币，害怕，然后把钱还了回去，还好没被发现，(*^__^*)。</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr><h4>上小学</h4></tr>
-            <tr>
-                <td rowspan="3">94年</td>
-                <td>
-                    <ol>
-                        <li>数学成绩还不错，经常被老师表扬，棒棒的，但是语文成绩一般，o(∩_∩)o。</li>
-                        <li>周五前会把这周的作业做完，周末就可以出去玩啦，好聪明。</li>
-                        <li>周五中午去学校时，常常看到同学在抄我的作业，好生气，(╯▔皿▔)╯。</li>
-                        <li>周末早出晚归，跟小伙伴们去玩游戏机，中午也在外面吃，那时候真的很疯狂。</li>
-                        <li>语文一直不好，刚好老师休产假，来了一位代课老师，挺喜欢你她的，因此学习成绩也变好许多。</li>
-                        <li>唱歌考试时，歌词很熟悉，唱起来既快又响亮，感觉自己很勇敢，棒棒的。</li>
-                        <li>刚从红窟小学转学来的小女孩很漂亮，情窦初开，发现有同学喜欢她，自己没自信，只能默默暗恋她。</li>
-                        <li>跟妈妈上演很多年的追迷藏比赛-找小霸王学习机，也是没谁了。</li>
-                        <li>跟弟弟因为东西或者什么时候打架，知道有一次突然发现把弟弟打疼了。</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
+        <div id="part1">
+            <button id="myButton">Change user</button>
+            <h1>Aboat me</h1>
+            <img src="images/me.jpg" alt="My picture" id="myPicture"/>
+            <ul>
+                <li>Name:JasonWxc</li>
+                <li>Gender:Male</li>
+                <li>Age:Thirty</li>
+                <li>BrithDay:87/5/23</li>
+                <li>Marry:single</li>
+                <li>Graduate:TUST</li>
+                <li>Amateur:Take a walk on the beach</li>
+                <li>Come from:Fujian Shishi</li>
+            </ul>
+        </div>
+        <div id="part2">
+            <h2>Have a break(#^.^#)</h2>
+            <p>Edit the line below in the Input area by wrapping it with the tags,You'll be able to see your changes update live in the Output area.</p>
+            <h4>Input</h4>
+            <textarea id="inputArea">This is my text.</textarea>
+            <h4>Output</h4>
+            <div id="outputArea"></div>
+            <div id="controlButton">
+                <button id="reset">Reset</button>
+                <button id="solution">Show solution</button>
+            </div>
+        </div>
+        <div id="part3">
+            <h2>Life experience</h2>
+            <img src="images/index.jpg" alt="in my childhood"/>
+            <table>
+                <tr><h4>刚出生</h4></tr>
+                <tr>
+                    <td>87年</td>
+                    <td>
+                        <ol>
+                            <li>据说妈妈生我的时候差点晕死过去，妈妈辛苦了，谢谢你。</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr><h4>小的时候</h4></tr>
+                <tr>
+                    <td rowspan="3">92年</td>
+                    <td>
+                        <ol>
+                            <li>被长发长指甲的乞丐吓到，吓死宝宝了。</li>
+                            <li>拿玻璃瓶盖刮花陌生人的摩托车箱，被发现，还好妈妈刚好出来，太感恩了，^_^o ~~~。</li>
+                            <li>第一次偷钱，貌似50块，本想拿去买游戏币，害怕，然后把钱还了回去，还好没被发现，(*^__^*)。</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr><h4>上小学</h4></tr>
+                <tr>
+                    <td rowspan="3">94年</td>
+                    <td>
+                        <ol>
+                            <li>数学成绩还不错，经常被老师表扬，棒棒的，但是语文成绩一般，o(∩_∩)o。</li>
+                            <li>周五前会把这周的作业做完，周末就可以出去玩啦，好聪明。</li>
+                            <li>周五中午去学校时，常常看到同学在抄我的作业，好生气，(╯▔皿▔)╯。</li>
+                            <li>周末早出晚归，跟小伙伴们去玩游戏机，中午也在外面吃，那时候真的很疯狂。</li>
+                            <li>语文一直不好，刚好老师休产假，来了一位代课老师，挺喜欢你她的，因此学习成绩也变好许多。</li>
+                            <li>唱歌考试时，歌词很熟悉，唱起来既快又响亮，感觉自己很勇敢，棒棒的。</li>
+                            <li>刚从红窟小学转学来的小女孩很漂亮，发现有同学喜欢她，自己没自信，只能默默暗恋她。</li>
+                            <li>上演很多年的追迷藏比赛-找小霸王学习机，感叹妈妈藏东西的想象力之余，也感受到自己为了游戏坚持不懈的精神，(#^.^#)。</li>
+                            <li>常跟弟弟因为抢东西或者意见不合打架，直到有一次突然发现把弟弟打疼了。</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
         <p>Read the <a href="http://www.wuxinchao.cn" alt="My website">My website</a> to know me more.</p>
         <script type="text/javascript" src="scripts/cookies.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>

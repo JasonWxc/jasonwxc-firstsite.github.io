@@ -1,7 +1,8 @@
-var myHeading = document.querySelector('h1');
 //myHeading.innerHTML = "Hello world!";
 //教程的方法，缺点是即使操作元素中还有其他元素时，innerText也只会对文本进行处理；
 //myHeading.innerText = "Hello world!";
+
+var myHeading = document.querySelector('h1');
 
 if(!docCookies.hasItem("name")) {
     setUserName();
@@ -64,3 +65,28 @@ myPicture.onclick = function() {
         myPicture.setAttribute("src", "images/me.jpg");
     }
 }*/
+
+var inputArea = document.getElementById("inputArea");
+var inputAreaValue = inputArea.value;
+var outputArea = document.querySelector("#outputArea");
+
+function drowOutput(){
+    outputArea.innerHTML = inputArea.value;
+}
+
+window.addEventListener("load", drowOutput);
+
+inputArea.addEventListener("input", drowOutput);
+
+var resetButton = document.getElementById("reset");
+var solutionButton = document.getElementById("solution");
+
+resetButton.addEventListener("click", function(){
+    inputArea.value = inputAreaValue;
+    drowOutput();
+});
+
+solutionButton.addEventListener("click", function(){
+    inputArea.value = "<em>This is my text.</em>";
+    drowOutput();
+});
