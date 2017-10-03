@@ -2,7 +2,7 @@
 //教程的方法，缺点是即使操作元素中还有其他元素时，innerText也只会对文本进行处理；
 //myHeading.innerText = "Hello world!";
 
-var myHeading = document.querySelector('h1');
+/*var myHeading = document.querySelector('h1');
 
 if(!docCookies.hasItem("name")) {
     setUserName();
@@ -23,7 +23,7 @@ function setUserName() {
     } else {
         myHeading.innerHTML = "My page is so cool";
     }
-}
+}*/
 
 /*if(!localStorage.getItem("name")) {
     setUserName();
@@ -48,10 +48,10 @@ var myPicture = document.getElementById("myPicture");
 var myPictureSrc;
 myPicture.onclick = function() {
     myPictureSrc = myPicture.getAttribute("src");
-    if(myPictureSrc === "images/me.jpg") {
-        myPicture.setAttribute("src", "images/back.jpg");
-    } else if(myPictureSrc === "images/back.jpg"){
-        myPicture.setAttribute("src", "images/me.jpg");
+    if(myPictureSrc === "../images/me.jpg") {
+        myPicture.setAttribute("src", "../images/back.jpg");
+    } else if(myPictureSrc === "../images/back.jpg"){
+        myPicture.setAttribute("src", "../images/me.jpg");
     }
 }
 //教程的方法，缺点是当querySelector只能取到所有符合对象的第一个值；

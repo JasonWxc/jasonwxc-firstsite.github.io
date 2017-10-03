@@ -27,7 +27,7 @@
     letter-spacing: 1px;
   }
 
-  img {
+  #myPicture{
     display: block;
     margin: 0 auto;
   }
@@ -38,4 +38,8 @@
     padding: 10px;
     border:1px solid #0095dd;
     background-color: white;
+  }
+
+  span.strong {
+    font-weight: bold;
   }
